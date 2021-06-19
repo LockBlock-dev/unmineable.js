@@ -1,0 +1,29 @@
+{
+  "name": "unmineable.js",
+  "version": "1.0.0",
+  "description": "A JavaScript library for interacting with the UnMineable API and WebSocket",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "ws": "^7.4.6"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LockBlock-dev/unmineable.js.git"
+  },
+  "author": "LockBlock-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LockBlock-dev/unmineable.js/issues"
+  },
+  "homepage": "https://github.com/LockBlock-dev/unmineable.js#readme",
+  "devDependencies": {},
+  "keywords": [
+    "crypto",
+    "pool",
+    "API"
+  ]
+}
