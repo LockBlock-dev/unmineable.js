@@ -1,6 +1,6 @@
 {
   "name": "unmineable.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript library for interacting with the UnMineable API and WebSocket",
   "main": "index.js",
   "dependencies": {
@@ -24,6 +24,7 @@
   "keywords": [
     "crypto",
     "pool",
-    "API"
+    "API",
+    "websocket"
   ]
 }
