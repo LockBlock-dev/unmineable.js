@@ -18,7 +18,7 @@
 <dd><p>Refresh.</p>
 </dd>
 <dt><a href="#reward">reward</a> ⇒ <code>Event</code></dt>
-<dd><p>Get reward.</p>
+<dd><p>Reward.</p>
 </dd>
 <dt><a href="#total_paid">total_paid</a> ⇒ <code>Event</code></dt>
 <dd><p>Get the total paid by the pool in BTC.</p>
@@ -48,17 +48,19 @@
 # WebSocket Methods
 
 ## start(uuid)
+
 Start the WebSocket.
 
-**Kind**: method  
+**Kind**: method
 
-| Param | Type | Description |
-| --- | --- | --- |
-| uuid | <code>String</code> | uuid: can be found in client.web.wallet() |
+| Param | Type                |
+| ----- | ------------------- |
+| uuid  | <code>String</code> |
 
-**Example**  
+**Example**
+
 ```js
-start("0cc5691e-cedb-11eb-b8bc-0242ac130003")
+start("0cc5691e-cedb-11eb-b8bc-0242ac130003");
 ```
 
 ---
@@ -68,119 +70,223 @@ start("0cc5691e-cedb-11eb-b8bc-0242ac130003")
 <a name="payment_status"></a>
 
 ## payment_status ⇒ <code>Event</code>
+
 Get payment_status.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("payment_status")
+{
+    Object,
+}
+```
+
+**Example**
+
+```js
+client.on("payment_status");
 ```
 
 <a name="refresh"></a>
 
 ## refresh ⇒ <code>Event</code>
+
 Refresh.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("refresh")
+{
+    Object,
+}
+```
+
+**Example**
+
+```js
+client.on("refresh");
 ```
 
 <a name="reward"></a>
 
 ## reward ⇒ <code>Event</code>
+
 Get reward.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("reward")
+{
+    Object,
+}
+```
+
+**Example**
+
+```js
+client.on("reward");
 ```
 
 <a name="total_paid"></a>
 
 ## total_paid ⇒ <code>Event</code>
+
 Get the total paid by the pool in BTC.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("total_paid")
+{
+    total: Number,
+}
+```
+
+**Example**
+
+```js
+client.on("total_paid");
 ```
 
 <a name="total_workers"></a>
 
 ## total_workers ⇒ <code>Event</code>
+
 Get the total of workers on the pool.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("total_workers")
+{
+    total: Number,
+}
+```
+
+**Example**
+
+```js
+client.on("total_workers");
 ```
 
 <a name="worker"></a>
 
 ## worker ⇒ <code>Event</code>
+
 Get worker stats.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("worker")
+{
+    name: String,
+    reportedHashrate: Number,
+    calculatedHashrate: Number,
+    lastShareAt: Number,
+    online: Boolean,
+}
+```
+
+**Example**
+
+```js
+client.on("worker");
 ```
 
 <a name="etchash_last_reward"></a>
 
 ## etchash_last_reward ⇒ <code>Event</code>
+
 Get last reward on Etchash.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("etchash_last_reward")
+{
+    timestamp: Number,
+}
+```
+
+**Example**
+
+```js
+client.on("etchash_last_reward");
 ```
 
 <a name="ethash_last_reward"></a>
 
 ## ethash_last_reward ⇒ <code>Event</code>
+
 Get last reward on Ethash.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("ethash_last_reward")
+{
+    timestamp: Number,
+}
+```
+
+**Example**
+
+```js
+client.on("ethash_last_reward");
 ```
 
 <a name="randomx_last_reward"></a>
 
 ## randomx_last_reward ⇒ <code>Event</code>
+
 Get last reward on RandomX.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("randomx_last_reward")
+{
+    timestamp: Number,
+}
+```
+
+**Example**
+
+```js
+client.on("randomx_last_reward");
 ```
 
 <a name="x16rv2_last_reward"></a>
 
 ## x16rv2_last_reward ⇒ <code>Event</code>
+
 Get last reward on KawPow.
 
-**Kind**: event  
+**Kind**: event
 
-**Example**  
+**Returns**:
+
 ```js
-client.on("x16rv2_last_reward")
+{
+    timestamp: Number,
+}
+```
+
+**Example**
+
+```js
+client.on("x16rv2_last_reward");
 ```
