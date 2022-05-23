@@ -2,6 +2,7 @@ const axios = require("axios").default;
 const errors = require("./errors");
 const EventEmitter = require("events");
 const { WebSocket } = require("./websocket");
+const pkg = require("../package.json");
 
 exports.Client = class Client extends EventEmitter {
     constructor() {
@@ -51,7 +52,7 @@ exports.Client = class Client extends EventEmitter {
             url: options.url ? options.url : this.#buildURL(version, path),
             headers: {
                 "User-Agent": `unmineable.js ${
-                    require("../package.json").version
+                    pkg.version
                 } (https://github.com/LockBlock-dev/unmineable.js)`,
                 "Content-Type": "application/json",
                 "Accept-Encoding": "UTF8",
