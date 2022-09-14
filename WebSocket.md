@@ -41,6 +41,9 @@
 <dt><a href="#x16rv2_last_reward">x16rv2_last_reward</a> ⇒ <code>Event</code></dt>
 <dd><p>Get last reward on KawPow.</p>
 </dd>
+<dt><a href="#autolykos_last_reward">autolykos_last_reward</a> ⇒ <code>Event</code></dt>
+<dd><p>Get last reward on Autolykos.</p>
+</dd>
 </dl>
 
 ---

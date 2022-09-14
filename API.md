@@ -1,4 +1,7 @@
 <dl>
+<dt><a href="#accountStats">accountStats(uuid)</a> ⇒ <code>Promise</code></dt>
+<dd><p>Get an account stats.</p>
+</dd>
 <dt><a href="#calculate">calculate(body)</a> ⇒ <code>Promise</code></dt>
 <dd><p>Get calculated reward for a coin.</p>
 </dd>
@@ -30,7 +33,7 @@
 <dd><p>Get the website | miner version.</p>
 </dd>
 <dt><a href="#wallet">wallet(params)</a> ⇒ <code>Promise</code></dt>
-<dd><p>Get a wallet | account stats.</p>
+<dd><p>Get a wallet | account info.</p>
 </dd>
 <dt><a href="#workers">workers(uuid)</a> ⇒ <code>Promise</code></dt>
 <dd><p>Get your workers stats.</p>
@@ -38,6 +41,25 @@
 </dl>
 
 ---
+
+<a name="accountStats"></a>
+
+## accountStats(uuid) ⇒ <code>Promise</code>
+
+Get an account stats.
+
+**Kind**: method  
+**Returns**: <code>Promise</code>
+
+| Param | Type                | Description                           |
+| ----- | ------------------- | ------------------------------------- |
+| uuid  | <code>String</code> | uuid: can be found in client.wallet() |
+
+**Example**
+
+```js
+accountStats("0cc5691e-cedb-11eb-b8bc-0242ac130003");
+```
 
 <a name="calculate"></a>
 
