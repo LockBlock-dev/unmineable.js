@@ -41,7 +41,6 @@ exports.Client = class Client extends EventEmitter {
             headers: {
                 "User-Agent": `unmineable.js ${pkg.version} (https://github.com/LockBlock-dev/unmineable.js)`,
                 "Content-Type": "application/json",
-                "Accept-Encoding": "UTF8",
             },
         });
 
