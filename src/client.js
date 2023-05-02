@@ -1,4 +1,5 @@
 const axios = require("axios").default;
+const io = require("socket.io-client");
 const errors = require("./errors");
 const EventEmitter = require("events");
 const pkg = require("../package.json");
